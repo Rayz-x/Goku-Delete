@@ -1,12 +1,24 @@
+![Goku Delete: delete files with a Kamehameha](docs/hero.jpg)
+
 # Goku Delete
 
 **Delete a file in Finder and a tiny Goku flies in from a random spot on your screen, charges up, and blasts it away with a Kamehameha.** The file goes to the Trash only when the beam hits it.
 
-![Goku Delete demo](docs/demo.gif)
+[![Goku Delete promo: Goku blasts a file off the desktop](docs/promo.gif)](docs/promo.mp4)
+
+▶️ **[Watch the promo video](docs/promo.mp4)** (10 s, no sound)
 
 *(Illustration of the effect. On a real desktop Goku is about twice the size of a Dock icon and the beam can cross windows and displays.)*
 
-## What it does
+## How it works
+
+![1. Select a file. 2. Press Cmd+Delete. 3. KAMEHAMEHA!](docs/how-it-works.jpg)
+
+1. **Select** a file in Finder.
+2. Press **Cmd+Delete** (or choose File > Move to Trash).
+3. Goku flies in, charges, and fires. **KAMEHAMEHA!** The file goes to the Trash the moment the beam hits.
+
+## What it does under the hood
 
 - Runs as a small background agent (no Dock icon, no menu bar item, no sound).
 - Watches Finder for **Cmd+Delete** and **File > Move to Trash**.
@@ -122,7 +134,7 @@ src/main.swift            the agent (event tap, AX lookup, overlay, animation)
 Resources/Info.plist      app bundle template (bundle id filled in by install.sh)
 Resources/goku_*.png      Goku sprite frames (charge + fire)
 install.sh / uninstall.sh
-docs/demo.gif
+docs/                     README images, promo video and GIF
 ```
 
 ## Disclaimer
